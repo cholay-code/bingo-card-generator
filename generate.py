@@ -9,6 +9,7 @@ from PIL import Image
 # TODO:
 #  - Move config to yaml file.
 #  - Create interface for marking off (HTML or TK)
+#  - Support transparency in images (currently only support RGB mode)
 
 # ! Variables you may want to edit:
 #########################################
@@ -46,6 +47,7 @@ input_images = [
     in input_files
     if os.path.isfile(os.path.join(INPUT_DIR, f))
     and f != FREESPACE_IMG_NAME
+    and f.split('.')[-1].lower() in ('jpg', 'jpeg', 'png')
 ]
 
 # Exit if insufficient images

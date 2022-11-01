@@ -4,7 +4,7 @@
  - Install Python 3.7 or above (ensure you add to PATH during install)
  - Open command line and navigate to project directory
  - run ```pip3 install -r requirements.txt```
- - Fill input directory with files including one freespace.png for the free space.
+ - Replace test images in input directory with files including one freespace.png for center space.
 
 # Usage
 *In project directory:*
